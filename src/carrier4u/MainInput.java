@@ -546,7 +546,7 @@ public class MainInput extends javax.swing.JFrame {
     int Verizon = 0;
     int Att = 0;
     int Tmobile = 0;
-    int Sprint = 0; 
+    int Sprint = 10; 
      
     private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
         // TODO add your handling code here:

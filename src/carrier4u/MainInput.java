@@ -94,6 +94,7 @@ public class MainInput extends javax.swing.JFrame {
         SouthEast = new javax.swing.JRadioButton();
         MidWest = new javax.swing.JRadioButton();
         West = new javax.swing.JRadioButton();
+        ResetButton = new javax.swing.JButton();
 
         jRadioButton8.setText("Yes");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -461,6 +462,13 @@ public class MainInput extends javax.swing.JFrame {
             }
         });
 
+        ResetButton.setText("Reset");
+        ResetButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ResetButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
         jInternalFrame1Layout.setHorizontalGroup(
@@ -543,8 +551,14 @@ public class MainInput extends javax.swing.JFrame {
                                     .addComponent(NetworkCDMA)
                                     .addComponent(OtherOS)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                                .addComponent(LocationBased)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                                        .addComponent(LocationBased)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                        .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(ResetButton)
+                                        .addGap(134, 134, 134)))
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(SubmitButton)
                                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
@@ -690,46 +704,45 @@ public class MainInput extends javax.swing.JFrame {
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addComponent(SignalStrength)
                         .addGap(37, 37, 37)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(RoamingStrength)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(NorthEast, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(SouthEast)
                                 .addComponent(MidWest)
-                                .addComponent(West)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(NetworkType)
-                            .addComponent(NetworkGSM)
-                            .addComponent(NetworkCDMA))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(DesiredOS)
-                            .addComponent(IOS)
-                            .addComponent(OtherOS)
-                            .addComponent(AndroidOS))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(MMS)
-                            .addComponent(MMSyes)
-                            .addComponent(MMSno))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(LocationBasedYes)
-                                .addComponent(LocationBasedNo))
-                            .addComponent(LocationBased))
-                        .addGap(32, 32, 32)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(SubmitButton)
-                            .addComponent(AnalysisOfCarriers)))
-                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(SignalPoor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(SignalFair)
-                            .addComponent(SignalGood)
-                            .addComponent(SignalExcellent))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                                .addComponent(West))
+                            .addComponent(RoamingStrength)))
+                    .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(SignalPoor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(SignalFair)
+                        .addComponent(SignalGood)
+                        .addComponent(SignalExcellent)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(NetworkType)
+                    .addComponent(NetworkGSM)
+                    .addComponent(NetworkCDMA))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DesiredOS)
+                    .addComponent(IOS)
+                    .addComponent(OtherOS)
+                    .addComponent(AndroidOS))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MMS)
+                    .addComponent(MMSyes)
+                    .addComponent(MMSno))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(LocationBasedYes)
+                        .addComponent(LocationBasedNo))
+                    .addComponent(LocationBased))
+                .addGap(32, 32, 32)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SubmitButton)
+                    .addComponent(AnalysisOfCarriers)
+                    .addComponent(ResetButton))
                 .addContainerGap())
         );
 
@@ -924,10 +937,10 @@ public class MainInput extends javax.swing.JFrame {
     }//GEN-LAST:event_MusicSteamingNoActionPerformed
 
     private void AnalysisOfCarriersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnalysisOfCarriersActionPerformed
-        System.out.println("Verizon has " + Verizon + "points.");
-        System.out.println("At&t has " + Att + "points.");
-        System.out.println("T-Mobile has " + Tmobile + "points.");
-        System.out.println("Sprint has " + Sprint + "points.");
+        System.out.println("Verizon has " + Verizon + " points.");
+        System.out.println("At&t has " + Att + " points.");
+        System.out.println("T-Mobile has " + Tmobile + " points.");
+        System.out.println("Sprint has " + Sprint + " points.");
     }//GEN-LAST:event_AnalysisOfCarriersActionPerformed
 
     private void Minutes1000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Minutes1000ActionPerformed
@@ -1033,6 +1046,59 @@ public class MainInput extends javax.swing.JFrame {
         Verizon++; // TODO add your handling code here:
     }//GEN-LAST:event_WestActionPerformed
 
+    private void ResetButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ResetButtonActionPerformed
+        
+        Verizon = 0;
+        Att = 0;
+        Tmobile = 0;
+        Sprint = 0; 
+     
+        
+        AndroidOS.setSelected(false);
+        BusinessMailNo.setSelected(false);
+        BusinessMailYes.setSelected(false);
+        Data10GB.setSelected(false);
+        Data3GB.setSelected(false);
+        Data5GB.setSelected(false);
+        DataUnlimited.setSelected(false);
+        FamilyPlanNo.setSelected(false);
+        FamilyPlanYes.setSelected(false);
+        IOS.setSelected(false);
+        InternationalCallingNo.setSelected(false);
+        InternationalCallingYes.setSelected(false);
+        InternationalTextingNo.setSelected(false);
+        InternationalTextingYes.setSelected(false);
+        Internet2G.setSelected(false);
+        Internet3G.setSelected(false);
+        InternetLTE.setSelected(false);
+        LocationBasedNo.setSelected(false);
+        LocationBasedYes.setSelected(false);
+        MMSno.setSelected(false);
+        MMSyes.setSelected(false);
+        MidWest.setSelected(false);
+        Minutes1000.setSelected(false);
+        Minutes10000.setSelected(false);
+        Minutes5000.setSelected(false);
+        MinutesUnlimited.setSelected(false);
+        MusicSteamingNo.setSelected(false);
+        MusicSteamingYes.setSelected(false);
+        NetworkCDMA.setSelected(false);
+        NetworkGSM.setSelected(false);
+        NorthEast.setSelected(false);
+        OtherOS.setSelected(false);
+        SignalExcellent.setSelected(false);
+        SignalFair.setSelected(false);
+        SignalGood.setSelected(false);
+        SignalPoor.setSelected(false);
+        SouthEast.setSelected(false);
+        Text1000.setSelected(false);
+        Text10000.setSelected(false);
+        Text5000.setSelected(false);
+        TextUnlimited.setSelected(false);
+        West.setSelected(false);
+
+    }//GEN-LAST:event_ResetButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1112,6 +1178,7 @@ public class MainInput extends javax.swing.JFrame {
     private javax.swing.JLabel NetworkType;
     private javax.swing.JRadioButton NorthEast;
     private javax.swing.JRadioButton OtherOS;
+    private javax.swing.JButton ResetButton;
     private javax.swing.JLabel RoamingStrength;
     private javax.swing.JRadioButton SignalExcellent;
     private javax.swing.JRadioButton SignalFair;

@@ -162,8 +162,17 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="1" attributes="0">
-                                  <Component id="LocationBased" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="LocationBased" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="ResetButton" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="SubmitButton" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" attributes="0">
@@ -340,60 +349,58 @@
                   </Group>
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
                           <Component id="SignalStrength" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="RoamingStrength" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" alignment="3" groupAlignment="3" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
                                   <Component id="NorthEast" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
                                   <Component id="SouthEast" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="MidWest" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="West" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                          </Group>
-                          <EmptySpace pref="47" max="32767" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="NetworkType" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="NetworkGSM" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="NetworkCDMA" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="DesiredOS" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="IOS" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="OtherOS" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AndroidOS" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="MMS" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="MMSyes" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="MMSno" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                                  <Component id="LocationBasedYes" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="LocationBasedNo" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="LocationBased" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="SubmitButton" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="AnalysisOfCarriers" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="RoamingStrength" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="SignalPoor" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
-                              <Component id="SignalFair" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="SignalGood" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="SignalExcellent" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="SignalPoor" alignment="3" min="-2" pref="24" max="-2" attributes="0"/>
+                          <Component id="SignalFair" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="SignalGood" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="SignalExcellent" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
+                  </Group>
+                  <EmptySpace pref="47" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="NetworkType" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="NetworkGSM" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="NetworkCDMA" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="DesiredOS" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="IOS" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="OtherOS" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="AndroidOS" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="MMS" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="MMSyes" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="MMSno" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="LocationBasedYes" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="LocationBasedNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="LocationBased" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="SubmitButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="AnalysisOfCarriers" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="ResetButton" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -854,6 +861,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="WestActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="ResetButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reset"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ResetButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

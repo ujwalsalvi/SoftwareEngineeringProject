@@ -656,10 +656,12 @@ public class MainInput extends javax.swing.JFrame {
     }//GEN-LAST:event_BusinessMailYesActionPerformed
 
     private void MusicSteamingYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MusicSteamingYesActionPerformed
+         System.out.println("Tmobile offers Music Streaming which doesnt count against your data.");
         // TODO add your handling code here:
     }//GEN-LAST:event_MusicSteamingYesActionPerformed
 
     private void MusicSteamingNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MusicSteamingNoActionPerformed
+         System.out.println("Sprint is the only Carrier which still offers unlimited data.");
         // TODO add your handling code here:
     }//GEN-LAST:event_MusicSteamingNoActionPerformed
 

@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+//Login page should go to where!
+    // If United States Selected then go to MainInput.Java
+        // If canada or Mexico selected the proceed towards unsuported.java
+            
 package carrier4u;
 
 /**

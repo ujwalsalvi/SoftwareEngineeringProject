@@ -35,7 +35,7 @@ public class Unsupported extends javax.swing.JFrame {
 
         jInternalFrame1.setVisible(true);
 
-        jLabel1.setText("Sorry, but this software is available in the location");
+        jLabel1.setText("Sorry, but this software is not available in the location");
 
         jButton1.setText("< Back");
 
@@ -44,7 +44,7 @@ public class Unsupported extends javax.swing.JFrame {
         jInternalFrame1Layout.setHorizontalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                .addContainerGap(70, Short.MAX_VALUE)
+                .addContainerGap(45, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(74, 74, 74))
             .addGroup(jInternalFrame1Layout.createSequentialGroup()

@@ -34,16 +34,10 @@ public class MainInput extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        TotalMinutes = new javax.swing.JTextPane();
         jLabel4 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        TotalText = new javax.swing.JTextPane();
         jLabel5 = new javax.swing.JLabel();
         jSeparator3 = new javax.swing.JSeparator();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        TotalData = new javax.swing.JTextPane();
         BusinessEmail = new javax.swing.JLabel();
         BusinessMailYes = new javax.swing.JRadioButton();
         BusinessMailNo = new javax.swing.JRadioButton();
@@ -67,8 +61,6 @@ public class MainInput extends javax.swing.JFrame {
         DesiredOS = new javax.swing.JLabel();
         MMS = new javax.swing.JLabel();
         LocationBased = new javax.swing.JLabel();
-        SignalCoverageSlider = new javax.swing.JSlider();
-        RoamingSlider = new javax.swing.JSlider();
         NetworkGSM = new javax.swing.JRadioButton();
         NetworkCDMA = new javax.swing.JRadioButton();
         IOS = new javax.swing.JRadioButton();
@@ -82,6 +74,26 @@ public class MainInput extends javax.swing.JFrame {
         MusicSteamingYes = new javax.swing.JRadioButton();
         MusicSteamingNo = new javax.swing.JRadioButton();
         AnalysisOfCarriers = new javax.swing.JButton();
+        Minutes1000 = new javax.swing.JRadioButton();
+        Minutes5000 = new javax.swing.JRadioButton();
+        Minutes10000 = new javax.swing.JRadioButton();
+        MinutesUnlimited = new javax.swing.JRadioButton();
+        DataUnlimited = new javax.swing.JRadioButton();
+        Data10GB = new javax.swing.JRadioButton();
+        Data5GB = new javax.swing.JRadioButton();
+        Data3GB = new javax.swing.JRadioButton();
+        TextUnlimited = new javax.swing.JRadioButton();
+        Text10000 = new javax.swing.JRadioButton();
+        Text5000 = new javax.swing.JRadioButton();
+        Text1000 = new javax.swing.JRadioButton();
+        SignalPoor = new javax.swing.JRadioButton();
+        SignalFair = new javax.swing.JRadioButton();
+        SignalGood = new javax.swing.JRadioButton();
+        SignalExcellent = new javax.swing.JRadioButton();
+        NorthEast = new javax.swing.JRadioButton();
+        SouthEast = new javax.swing.JRadioButton();
+        MidWest = new javax.swing.JRadioButton();
+        West = new javax.swing.JRadioButton();
 
         jRadioButton8.setText("Yes");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -101,8 +113,10 @@ public class MainInput extends javax.swing.JFrame {
 
         jInternalFrame1.setVisible(true);
 
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel2.setText("Representative View");
 
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel1.setText("Carrier4U");
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel1.setAlignmentX(0.1F);
@@ -111,15 +125,9 @@ public class MainInput extends javax.swing.JFrame {
 
         jLabel3.setText("Total Minutes Desired:");
 
-        jScrollPane2.setViewportView(TotalMinutes);
-
         jLabel4.setText("Total Data Desired:");
 
-        jScrollPane3.setViewportView(TotalText);
-
         jLabel5.setText("Total Text Desired:");
-
-        jScrollPane4.setViewportView(TotalData);
 
         BusinessEmail.setText("Business Email");
 
@@ -210,9 +218,9 @@ public class MainInput extends javax.swing.JFrame {
             }
         });
 
-        SignalStrength.setText("Importance of Signal Coverage");
+        SignalStrength.setText("Signal Coverage");
 
-        RoamingStrength.setText("Roming");
+        RoamingStrength.setText("Region");
 
         NetworkType.setText("Type Of Network");
 
@@ -313,6 +321,146 @@ public class MainInput extends javax.swing.JFrame {
             }
         });
 
+        Minutes1000.setText("<1000");
+        Minutes1000.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Minutes1000ActionPerformed(evt);
+            }
+        });
+
+        Minutes5000.setText("<5000");
+        Minutes5000.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Minutes5000ActionPerformed(evt);
+            }
+        });
+
+        Minutes10000.setText("<10000");
+        Minutes10000.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Minutes10000ActionPerformed(evt);
+            }
+        });
+
+        MinutesUnlimited.setText("Unlimited");
+        MinutesUnlimited.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MinutesUnlimitedActionPerformed(evt);
+            }
+        });
+
+        DataUnlimited.setText("Unlimited");
+        DataUnlimited.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DataUnlimitedActionPerformed(evt);
+            }
+        });
+
+        Data10GB.setText("10GB");
+        Data10GB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Data10GBActionPerformed(evt);
+            }
+        });
+
+        Data5GB.setText("5GB");
+        Data5GB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Data5GBActionPerformed(evt);
+            }
+        });
+
+        Data3GB.setText("3GB");
+        Data3GB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Data3GBActionPerformed(evt);
+            }
+        });
+
+        TextUnlimited.setText("Unlimited");
+        TextUnlimited.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextUnlimitedActionPerformed(evt);
+            }
+        });
+
+        Text10000.setText("<10000");
+        Text10000.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Text10000ActionPerformed(evt);
+            }
+        });
+
+        Text5000.setText("<5000");
+        Text5000.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Text5000ActionPerformed(evt);
+            }
+        });
+
+        Text1000.setText("<1000");
+        Text1000.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Text1000ActionPerformed(evt);
+            }
+        });
+
+        SignalPoor.setText("Poor");
+        SignalPoor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignalPoorActionPerformed(evt);
+            }
+        });
+
+        SignalFair.setText("Fair");
+        SignalFair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignalFairActionPerformed(evt);
+            }
+        });
+
+        SignalGood.setText("Good");
+        SignalGood.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignalGoodActionPerformed(evt);
+            }
+        });
+
+        SignalExcellent.setText("Excellent");
+        SignalExcellent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SignalExcellentActionPerformed(evt);
+            }
+        });
+
+        NorthEast.setText("North East");
+        NorthEast.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NorthEastActionPerformed(evt);
+            }
+        });
+
+        SouthEast.setText("South East");
+        SouthEast.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SouthEastActionPerformed(evt);
+            }
+        });
+
+        MidWest.setText("Mid West");
+        MidWest.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MidWestActionPerformed(evt);
+            }
+        });
+
+        West.setText("West");
+        West.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WestActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
         jInternalFrame1Layout.setHorizontalGroup(
@@ -321,43 +469,64 @@ public class MainInput extends javax.swing.JFrame {
             .addComponent(jSeparator2, javax.swing.GroupLayout.Alignment.TRAILING)
             .addComponent(jSeparator3, javax.swing.GroupLayout.Alignment.TRAILING)
             .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(232, Short.MAX_VALUE))
+            .addGroup(jInternalFrame1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
+                            .addComponent(InternetSpeed)
+                            .addComponent(RoamingStrength))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                .addComponent(Internet2G)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Internet3G)
+                                .addGap(12, 12, 12)
+                                .addComponent(InternetLTE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                .addComponent(NorthEast)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(SouthEast)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(MidWest)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(West)
+                                .addContainerGap())))
+                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                                .addGap(177, 177, 177)
-                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(17, 17, 17))
-                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18))
-                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))
-                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addComponent(BusinessEmail)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(BusinessMailYes)
-                        .addGap(12, 12, 12)
-                        .addComponent(BusinessMailNo)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Data3GB, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Data5GB)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Data10GB)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(DataUnlimited)
+                                .addGap(16, 16, 16))
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                                .addComponent(BusinessEmail)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(BusinessMailYes)
+                                .addGap(12, 12, 12)
+                                .addComponent(BusinessMailNo))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
                                 .addComponent(MMS)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(MMSyes)
                                 .addGap(12, 12, 12)
                                 .addComponent(MMSno))
-                            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                         .addComponent(DesiredOS)
@@ -373,7 +542,7 @@ public class MainInput extends javax.swing.JFrame {
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(NetworkCDMA)
                                     .addComponent(OtherOS)))
-                            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
                                 .addComponent(LocationBased)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -381,83 +550,101 @@ public class MainInput extends javax.swing.JFrame {
                                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                         .addComponent(LocationBasedYes)
                                         .addGap(12, 12, 12)
-                                        .addComponent(LocationBasedNo)))))
+                                        .addComponent(LocationBasedNo))))
+                            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(MusicStreaming)
+                                    .addComponent(FamilyPlan)
+                                    .addComponent(InternationalCalling)
+                                    .addComponent(InternationalTexting))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                        .addComponent(FamilyPlanYes)
+                                        .addGap(12, 12, 12)
+                                        .addComponent(FamilyPlanNo))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                        .addComponent(MusicSteamingYes)
+                                        .addGap(12, 12, 12)
+                                        .addComponent(MusicSteamingNo))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                        .addComponent(InternationalTextingYes)
+                                        .addGap(12, 12, 12)
+                                        .addComponent(InternationalTextingNo))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                        .addComponent(InternationalCallingYes)
+                                        .addGap(12, 12, 12)
+                                        .addComponent(InternationalCallingNo)))))
                         .addContainerGap())
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(MusicStreaming)
-                            .addComponent(FamilyPlan)
-                            .addComponent(InternationalCalling)
-                            .addComponent(InternationalTexting))
+                        .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                                .addComponent(FamilyPlanYes)
-                                .addGap(12, 12, 12)
-                                .addComponent(FamilyPlanNo))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                                .addComponent(MusicSteamingYes)
-                                .addGap(12, 12, 12)
-                                .addComponent(MusicSteamingNo))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                                .addComponent(InternationalTextingYes)
-                                .addGap(12, 12, 12)
-                                .addComponent(InternationalTextingNo))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                                .addComponent(InternationalCallingYes)
-                                .addGap(12, 12, 12)
-                                .addComponent(InternationalCallingNo)))
+                        .addComponent(Minutes1000, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Minutes5000)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Minutes10000)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(MinutesUnlimited)
                         .addContainerGap())
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(InternetSpeed)
-                            .addComponent(RoamingStrength))
-                        .addGap(18, 18, Short.MAX_VALUE)
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                                .addComponent(Internet2G)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Internet3G)
-                                .addGap(12, 12, 12)
-                                .addComponent(InternetLTE))
-                            .addComponent(RoamingSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addGap(160, 160, 160)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(AnalysisOfCarriers)
-                    .addComponent(SignalStrength))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(SignalCoverageSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                        .addComponent(jLabel5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Text1000, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Text5000)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Text10000)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(TextUnlimited)
+                        .addGap(23, 23, 23))
+                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(AnalysisOfCarriers)
+                            .addComponent(SignalStrength))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(SignalPoor, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SignalFair)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SignalGood)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(SignalExcellent)
+                        .addGap(17, 17, 17))))
         );
         jInternalFrame1Layout.setVerticalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(2, 2, 2)
                 .addComponent(jLabel2)
-                .addGap(16, 16, 16)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(18, 18, 18)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(Minutes1000, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Minutes5000)
+                    .addComponent(Minutes10000)
+                    .addComponent(MinutesUnlimited))
+                .addGap(10, 10, 10)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(6, 6, 6)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Data3GB, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Data5GB)
+                    .addComponent(Data10GB)
+                    .addComponent(DataUnlimited))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(Text1000, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Text5000)
+                    .addComponent(Text10000)
+                    .addComponent(TextUnlimited))
+                .addGap(6, 6, 6)
                 .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -500,38 +687,49 @@ public class MainInput extends javax.swing.JFrame {
                     .addComponent(InternetLTE))
                 .addGap(32, 32, 32)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SignalStrength)
-                    .addComponent(SignalCoverageSlider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(RoamingStrength)
-                    .addComponent(RoamingSlider, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(NetworkType)
-                    .addComponent(NetworkGSM)
-                    .addComponent(NetworkCDMA))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DesiredOS)
-                    .addComponent(IOS)
-                    .addComponent(OtherOS)
-                    .addComponent(AndroidOS))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(MMS)
-                    .addComponent(MMSyes)
-                    .addComponent(MMSno))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(LocationBasedYes)
-                        .addComponent(LocationBasedNo))
-                    .addComponent(LocationBased))
-                .addGap(32, 32, 32)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(SubmitButton)
-                    .addComponent(AnalysisOfCarriers))
+                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                        .addComponent(SignalStrength)
+                        .addGap(37, 37, 37)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(RoamingStrength)
+                            .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(NorthEast, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(SouthEast)
+                                .addComponent(MidWest)
+                                .addComponent(West)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(NetworkType)
+                            .addComponent(NetworkGSM)
+                            .addComponent(NetworkCDMA))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(DesiredOS)
+                            .addComponent(IOS)
+                            .addComponent(OtherOS)
+                            .addComponent(AndroidOS))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(MMS)
+                            .addComponent(MMSyes)
+                            .addComponent(MMSno))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(LocationBasedYes)
+                                .addComponent(LocationBasedNo))
+                            .addComponent(LocationBased))
+                        .addGap(32, 32, 32)
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SubmitButton)
+                            .addComponent(AnalysisOfCarriers)))
+                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(SignalPoor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SignalFair)
+                            .addComponent(SignalGood)
+                            .addComponent(SignalExcellent))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -732,6 +930,109 @@ public class MainInput extends javax.swing.JFrame {
         System.out.println("Sprint has " + Sprint + "points.");
     }//GEN-LAST:event_AnalysisOfCarriersActionPerformed
 
+    private void Minutes1000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Minutes1000ActionPerformed
+        System.out.println("Verizon has A good network plan for 1000 Minutes.");
+        Verizon++;
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Minutes1000ActionPerformed
+
+    private void Minutes10000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Minutes10000ActionPerformed
+       System.out.println("Sprint has A good network plan for 10000 Minutes.");
+        Sprint++;// TODO add your handling code here:
+    }//GEN-LAST:event_Minutes10000ActionPerformed
+
+    private void Data10GBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Data10GBActionPerformed
+        Tmobile++;// TODO add your handling code here:
+        System.out.println("Tmobile has A good data plan for 10GB.");
+    }//GEN-LAST:event_Data10GBActionPerformed
+
+    private void Data3GBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Data3GBActionPerformed
+        System.out.println("Verizon has A good Data plan for 3GB.");
+        Verizon++;// TODO add your handling code here:
+    }//GEN-LAST:event_Data3GBActionPerformed
+
+    private void Text10000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Text10000ActionPerformed
+        // TODO add your handling code here:
+         Sprint++;
+        System.out.println("Sprint has A good network plan for 10000 Minutes.");
+    }//GEN-LAST:event_Text10000ActionPerformed
+
+    private void Text1000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Text1000ActionPerformed
+        System.out.println("AT&T has A good texting plan for 10000 Texts.");
+        Att++;// TODO add your handling code here:
+    }//GEN-LAST:event_Text1000ActionPerformed
+
+    private void MinutesUnlimitedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MinutesUnlimitedActionPerformed
+        System.out.println("Tmobile has A good Network plan for Unlimited Minutes.");
+        Tmobile++;
+// TODO add your handling code here:
+    }//GEN-LAST:event_MinutesUnlimitedActionPerformed
+
+    private void Minutes5000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Minutes5000ActionPerformed
+        System.out.println("AT&T has A good Network plan for 5000 Minutes.");
+        Att++;// TODO add your handling code here:
+    }//GEN-LAST:event_Minutes5000ActionPerformed
+
+    private void Data5GBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Data5GBActionPerformed
+         System.out.println("AT&T has A good Data plan for 5GB.");
+        Att++;// TODO add your handling code here:// TODO add your handling code here:
+    }//GEN-LAST:event_Data5GBActionPerformed
+
+    private void DataUnlimitedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DataUnlimitedActionPerformed
+       System.out.println("Sprint has A good data plan for Unlimited.");
+        Sprint++; // TODO add your handling code here:
+    }//GEN-LAST:event_DataUnlimitedActionPerformed
+
+    private void Text5000ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Text5000ActionPerformed
+       System.out.println("Verizon has A good texting plan for 50000 Texts.");
+        Verizon++; // TODO add your handling code here:
+    }//GEN-LAST:event_Text5000ActionPerformed
+
+    private void TextUnlimitedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextUnlimitedActionPerformed
+       System.out.println("Tmobile has A good Network plan for Unlimited Texting.");
+        Tmobile++; // TODO add your handling code here:
+    }//GEN-LAST:event_TextUnlimitedActionPerformed
+
+    private void SignalPoorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignalPoorActionPerformed
+        System.out.println("Sprint has A poor Network Signal Strength.");
+        Sprint++;// TODO add your handling code here:
+    }//GEN-LAST:event_SignalPoorActionPerformed
+
+    private void SignalFairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignalFairActionPerformed
+      System.out.println("Tmobile has A Fair Network Signal Strength.");
+        Tmobile++;  // TODO add your handling code here:
+    }//GEN-LAST:event_SignalFairActionPerformed
+
+    private void SignalGoodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignalGoodActionPerformed
+       System.out.println("AT&T has A Good Network Signal Strength.");
+        Att++; // TODO add your handling code here:
+    }//GEN-LAST:event_SignalGoodActionPerformed
+
+    private void SignalExcellentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignalExcellentActionPerformed
+       System.out.println("Verizon has an Excellent Network Signal Strength.");
+        Verizon++; // TODO add your handling code here:
+    }//GEN-LAST:event_SignalExcellentActionPerformed
+
+    private void NorthEastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NorthEastActionPerformed
+       System.out.println("AT&T has an Excellent Network Signal Strength in NorthEast.");
+        Att++; // TODO add your handling code here: // TODO add your handling code here:
+    }//GEN-LAST:event_NorthEastActionPerformed
+
+    private void SouthEastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SouthEastActionPerformed
+       System.out.println("Tmobile has an Excellent Network Signal Strength in South East.");
+        Tmobile++; // TODO add your handling code here:
+    }//GEN-LAST:event_SouthEastActionPerformed
+
+    private void MidWestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MidWestActionPerformed
+       System.out.println("Sprint has an Excellent Network Signal Strength in Mid West.");
+        Sprint++; // TODO add your handling code here:
+    }//GEN-LAST:event_MidWestActionPerformed
+
+    private void WestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WestActionPerformed
+       System.out.println("Verizon has an Excellent Network Signal Strength in West.");
+        Verizon++; // TODO add your handling code here:
+    }//GEN-LAST:event_WestActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -773,6 +1074,10 @@ public class MainInput extends javax.swing.JFrame {
     private javax.swing.JLabel BusinessEmail;
     private javax.swing.JRadioButton BusinessMailNo;
     private javax.swing.JRadioButton BusinessMailYes;
+    private javax.swing.JRadioButton Data10GB;
+    private javax.swing.JRadioButton Data3GB;
+    private javax.swing.JRadioButton Data5GB;
+    private javax.swing.JRadioButton DataUnlimited;
     private javax.swing.JLabel DesiredOS;
     private javax.swing.JLabel FamilyPlan;
     private javax.swing.JRadioButton FamilyPlanNo;
@@ -794,21 +1099,32 @@ public class MainInput extends javax.swing.JFrame {
     private javax.swing.JLabel MMS;
     private javax.swing.JRadioButton MMSno;
     private javax.swing.JRadioButton MMSyes;
+    private javax.swing.JRadioButton MidWest;
+    private javax.swing.JRadioButton Minutes1000;
+    private javax.swing.JRadioButton Minutes10000;
+    private javax.swing.JRadioButton Minutes5000;
+    private javax.swing.JRadioButton MinutesUnlimited;
     private javax.swing.JRadioButton MusicSteamingNo;
     private javax.swing.JRadioButton MusicSteamingYes;
     private javax.swing.JLabel MusicStreaming;
     private javax.swing.JRadioButton NetworkCDMA;
     private javax.swing.JRadioButton NetworkGSM;
     private javax.swing.JLabel NetworkType;
+    private javax.swing.JRadioButton NorthEast;
     private javax.swing.JRadioButton OtherOS;
-    private javax.swing.JSlider RoamingSlider;
     private javax.swing.JLabel RoamingStrength;
-    private javax.swing.JSlider SignalCoverageSlider;
+    private javax.swing.JRadioButton SignalExcellent;
+    private javax.swing.JRadioButton SignalFair;
+    private javax.swing.JRadioButton SignalGood;
+    private javax.swing.JRadioButton SignalPoor;
     private javax.swing.JLabel SignalStrength;
+    private javax.swing.JRadioButton SouthEast;
     private javax.swing.JButton SubmitButton;
-    private javax.swing.JTextPane TotalData;
-    private javax.swing.JTextPane TotalMinutes;
-    private javax.swing.JTextPane TotalText;
+    private javax.swing.JRadioButton Text1000;
+    private javax.swing.JRadioButton Text10000;
+    private javax.swing.JRadioButton Text5000;
+    private javax.swing.JRadioButton TextUnlimited;
+    private javax.swing.JRadioButton West;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -817,9 +1133,6 @@ public class MainInput extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JRadioButton jRadioButton7;
     private javax.swing.JRadioButton jRadioButton8;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;

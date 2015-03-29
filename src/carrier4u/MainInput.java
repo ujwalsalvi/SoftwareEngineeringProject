@@ -543,6 +543,11 @@ public class MainInput extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    int Verizon = 0;
+    int Att = 0;
+    int Tmobile = 0;
+    int Sprint = 0; 
+     
     private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton8ActionPerformed
@@ -691,7 +696,7 @@ public class MainInput extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(MainInput.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

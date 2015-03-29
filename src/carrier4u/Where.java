@@ -178,13 +178,13 @@ public class Where extends javax.swing.JFrame {
 
     private void RegisterCustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterCustomerButtonActionPerformed
        dispose();
-        Customer_Info s = new Customer_Info();
+        Cust_Info s = new Cust_Info();
         s.setVisible(true); // TODO add your handling code here:
     }//GEN-LAST:event_RegisterCustomerButtonActionPerformed
 
     private void LookupCustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LookupCustomerButtonActionPerformed
         dispose();
-        LookUp_Customer s = new LookUp_Customer();
+        Look_Customer s = new Look_Customer();
         s.setVisible(true);// TODO add your handling code here:
     }//GEN-LAST:event_LookupCustomerButtonActionPerformed
 

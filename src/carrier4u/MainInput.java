@@ -171,6 +171,8 @@ public final class MainInput extends javax.swing.JFrame {
         MidWest = new javax.swing.JRadioButton();
         West = new javax.swing.JRadioButton();
         ResetButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         jRadioButton8.setText("Yes");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -545,6 +547,10 @@ public final class MainInput extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setText("Compare");
+
+        jButton2.setText("Logout");
+
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
         jInternalFrame1Layout.setHorizontalGroup(
@@ -628,19 +634,26 @@ public final class MainInput extends javax.swing.JFrame {
                                     .addComponent(OtherOS)))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                                        .addComponent(LocationBased)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(LocationBased)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
                                         .addGap(0, 0, Short.MAX_VALUE)
+                                        .addComponent(AnalysisOfCarriers)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton1)
+                                        .addGap(18, 18, 18)
                                         .addComponent(ResetButton)
-                                        .addGap(134, 134, 134)))
+                                        .addGap(18, 18, 18)))
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(SubmitButton)
                                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
+                                        .addGap(86, 86, 86)
                                         .addComponent(LocationBasedYes)
                                         .addGap(12, 12, 12)
-                                        .addComponent(LocationBasedNo))))
+                                        .addComponent(LocationBasedNo))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
+                                        .addComponent(SubmitButton)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jButton2)
+                                        .addGap(8, 8, 8))))
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(MusicStreaming)
@@ -689,9 +702,7 @@ public final class MainInput extends javax.swing.JFrame {
                         .addComponent(TextUnlimited)
                         .addGap(23, 23, 23))
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(AnalysisOfCarriers)
-                            .addComponent(SignalStrength))
+                        .addComponent(SignalStrength)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(SignalPoor, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -818,7 +829,9 @@ public final class MainInput extends javax.swing.JFrame {
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(SubmitButton)
                     .addComponent(AnalysisOfCarriers)
-                    .addComponent(ResetButton))
+                    .addComponent(ResetButton)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2))
                 .addContainerGap())
         );
 
@@ -1304,6 +1317,8 @@ public final class MainInput extends javax.swing.JFrame {
     private javax.swing.JRadioButton Text5000;
     private javax.swing.JRadioButton TextUnlimited;
     private javax.swing.JRadioButton West;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

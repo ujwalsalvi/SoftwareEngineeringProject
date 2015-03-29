@@ -208,7 +208,10 @@
               </Group>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="SignalStrength" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="AnalysisOfCarriers" min="-2" max="-2" attributes="0"/>
+                      <Component id="SignalStrength" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace pref="12" max="32767" attributes="0"/>
                   <Component id="SignalCoverageSlider" min="-2" pref="258" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -332,7 +335,10 @@
                       <Component id="LocationBased" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                  <Component id="SubmitButton" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="SubmitButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="AnalysisOfCarriers" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -655,6 +661,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MusicSteamingNoActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="AnalysisOfCarriers">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Analyze"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AnalysisOfCarriersActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

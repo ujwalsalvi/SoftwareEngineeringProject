@@ -81,6 +81,7 @@ public class MainInput extends javax.swing.JFrame {
         SubmitButton = new javax.swing.JButton();
         MusicSteamingYes = new javax.swing.JRadioButton();
         MusicSteamingNo = new javax.swing.JRadioButton();
+        AnalysisOfCarriers = new javax.swing.JButton();
 
         jRadioButton8.setText("Yes");
         jRadioButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -305,6 +306,13 @@ public class MainInput extends javax.swing.JFrame {
             }
         });
 
+        AnalysisOfCarriers.setText("Analyze");
+        AnalysisOfCarriers.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnalysisOfCarriersActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
         jInternalFrame1Layout.setHorizontalGroup(
@@ -419,7 +427,9 @@ public class MainInput extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(SignalStrength)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(AnalysisOfCarriers)
+                    .addComponent(SignalStrength))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(SignalCoverageSlider, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -519,7 +529,9 @@ public class MainInput extends javax.swing.JFrame {
                         .addComponent(LocationBasedNo))
                     .addComponent(LocationBased))
                 .addGap(32, 32, 32)
-                .addComponent(SubmitButton)
+                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SubmitButton)
+                    .addComponent(AnalysisOfCarriers))
                 .addContainerGap())
         );
 
@@ -713,6 +725,13 @@ public class MainInput extends javax.swing.JFrame {
          // TODO add your handling code here:
     }//GEN-LAST:event_MusicSteamingNoActionPerformed
 
+    private void AnalysisOfCarriersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnalysisOfCarriersActionPerformed
+        System.out.println("Verizon has " + Verizon + "points.");
+        System.out.println("At&t has " + Att + "points.");
+        System.out.println("T-Mobile has " + Tmobile + "points.");
+        System.out.println("Sprint has " + Sprint + "points.");
+    }//GEN-LAST:event_AnalysisOfCarriersActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -749,6 +768,7 @@ public class MainInput extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AnalysisOfCarriers;
     private javax.swing.JRadioButton AndroidOS;
     private javax.swing.JLabel BusinessEmail;
     private javax.swing.JRadioButton BusinessMailNo;

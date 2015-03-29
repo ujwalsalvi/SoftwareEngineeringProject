@@ -28,12 +28,12 @@ public class Where extends javax.swing.JFrame {
     private void initComponents() {
 
         jInternalFrame1 = new javax.swing.JInternalFrame();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        USAButton = new javax.swing.JButton();
+        MexicoButton = new javax.swing.JButton();
+        CanadaButton = new javax.swing.JButton();
+        LatinAmericaButton = new javax.swing.JButton();
+        RegisterCustomerButton = new javax.swing.JButton();
+        LookupCustomerButton = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
 
@@ -41,45 +41,45 @@ public class Where extends javax.swing.JFrame {
 
         jInternalFrame1.setVisible(true);
 
-        jButton1.setText("USA");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        USAButton.setText("USA");
+        USAButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                USAButtonActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Mexico");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        MexicoButton.setText("Mexico");
+        MexicoButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                MexicoButtonActionPerformed(evt);
             }
         });
 
-        jButton3.setText("Canada");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        CanadaButton.setText("Canada");
+        CanadaButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                CanadaButtonActionPerformed(evt);
             }
         });
 
-        jButton4.setText("Latin America");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        LatinAmericaButton.setText("Latin America");
+        LatinAmericaButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                LatinAmericaButtonActionPerformed(evt);
             }
         });
 
-        jButton5.setText("Register Customer");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        RegisterCustomerButton.setText("Register Customer");
+        RegisterCustomerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                RegisterCustomerButtonActionPerformed(evt);
             }
         });
 
-        jButton6.setText("Lookup Customer");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        LookupCustomerButton.setText("Lookup Customer");
+        LookupCustomerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                LookupCustomerButtonActionPerformed(evt);
             }
         });
 
@@ -93,21 +93,21 @@ public class Where extends javax.swing.JFrame {
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addComponent(jButton3)
+                        .addComponent(CanadaButton)
                         .addGap(53, 53, 53)
                         .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(USAButton, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                                .addComponent(jButton2)
+                                .addComponent(MexicoButton)
                                 .addGap(41, 41, 41)
-                                .addComponent(jButton4))))
+                                .addComponent(LatinAmericaButton))))
                     .addGroup(jInternalFrame1Layout.createSequentialGroup()
                         .addGap(25, 25, 25)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(RegisterCustomerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(LookupCustomerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jInternalFrame1Layout.createSequentialGroup()
@@ -119,18 +119,18 @@ public class Where extends javax.swing.JFrame {
             .addGroup(jInternalFrame1Layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegisterCustomerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LookupCustomerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.DEFAULT_SIZE, 16, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(USAButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(CanadaButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MexicoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LatinAmericaButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(35, 35, 35))
         );
 
@@ -152,29 +152,41 @@ public class Where extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void USAButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_USAButtonActionPerformed
+      dispose();
+        MainInput s = new MainInput();
+        s.setVisible(true);  // TODO add your handling code here:
+    }//GEN-LAST:event_USAButtonActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void MexicoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MexicoButtonActionPerformed
+       dispose();
+        Unsupported s = new Unsupported();
+        s.setVisible(true); // TODO add your handling code here:
+    }//GEN-LAST:event_MexicoButtonActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void CanadaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CanadaButtonActionPerformed
+        dispose();
+        Unsupported s = new Unsupported();
+        s.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_CanadaButtonActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void LatinAmericaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LatinAmericaButtonActionPerformed
+       dispose();
+        Unsupported s = new Unsupported();
+        s.setVisible(true); // TODO add your handling code here:
+    }//GEN-LAST:event_LatinAmericaButtonActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void RegisterCustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterCustomerButtonActionPerformed
+       dispose();
+        Customer_Info s = new Customer_Info();
+        s.setVisible(true); // TODO add your handling code here:
+    }//GEN-LAST:event_RegisterCustomerButtonActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void LookupCustomerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LookupCustomerButtonActionPerformed
+        dispose();
+        LookUp_Customer s = new LookUp_Customer();
+        s.setVisible(true);// TODO add your handling code here:
+    }//GEN-LAST:event_LookupCustomerButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,12 +224,12 @@ public class Where extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton CanadaButton;
+    private javax.swing.JButton LatinAmericaButton;
+    private javax.swing.JButton LookupCustomerButton;
+    private javax.swing.JButton MexicoButton;
+    private javax.swing.JButton RegisterCustomerButton;
+    private javax.swing.JButton USAButton;
     private javax.swing.JInternalFrame jInternalFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JSeparator jSeparator1;

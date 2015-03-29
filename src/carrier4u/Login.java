@@ -116,7 +116,13 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_passwordActionPerformed
 
     private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
-        // TODO add your handling code here:
+         dispose();
+        Where s = new Where();
+        s.setVisible(true);
+         
+          
+
+// TODO add your handling code here:
     }//GEN-LAST:event_LoginButtonActionPerformed
 
     /**

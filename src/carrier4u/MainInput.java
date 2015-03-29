@@ -546,7 +546,7 @@ public class MainInput extends javax.swing.JFrame {
     int Verizon = 0;
     int Att = 0;
     int Tmobile = 0;
-    int Sprint = 10; 
+    int Sprint = 0; 
      
     private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
         // TODO add your handling code here:
@@ -557,7 +557,7 @@ public class MainInput extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton7ActionPerformed
 
     private void SubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitButtonActionPerformed
-        // TODO add your handling code here:
+       
     }//GEN-LAST:event_SubmitButtonActionPerformed
 
     private void LocationBasedYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LocationBasedYesActionPerformed
@@ -632,42 +632,61 @@ public class MainInput extends javax.swing.JFrame {
 
     private void InternationalCallingNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalCallingNoActionPerformed
          System.out.println("Verizon and Sprint dont offer International Calling since they are CDMA.");
+        Verizon++;
+        Sprint++;
+        
         // TODO add your handling code here:
     }//GEN-LAST:event_InternationalCallingNoActionPerformed
 
     private void InternationalCallingYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalCallingYesActionPerformed
            System.out.println("T-Mobile and AT&T has better International texting plan since they are global.");
-        // TODO add your handling code here:
+         
+        Tmobile++;
+        Att++;// TODO add your handling code here:
     }//GEN-LAST:event_InternationalCallingYesActionPerformed
 
     private void FamilyPlanYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FamilyPlanYesActionPerformed
              System.out.println("T-Mobile and AT&T both offer $100 for 4 lines plan.");
-        // TODO add your handling code here:
+         
+        Tmobile++;
+        Att++;// TODO add your handling code here:
     }//GEN-LAST:event_FamilyPlanYesActionPerformed
 
     private void FamilyPlanNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FamilyPlanNoActionPerformed
        System.out.println("Verizon and Sprint have the best single line plans startign at $45.");
-        // TODO add your handling code here:
+        Verizon++;
+        Sprint++;
+        
+       // TODO add your handling code here:
     }//GEN-LAST:event_FamilyPlanNoActionPerformed
 
     private void BusinessMailNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BusinessMailNoActionPerformed
         System.out.println("T-Mobile and AT&T arent best on offering Business and Corporate plans.");
-        // TODO add your handling code here:
+     
+        Tmobile++;
+        Att++;  // TODO add your handling code here:
     }//GEN-LAST:event_BusinessMailNoActionPerformed
 
     private void BusinessMailYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BusinessMailYesActionPerformed
        System.out.println("Verizon and Sprint have the best corporate emails.");
+         Verizon++;
+        Sprint++;
         // TODO add your handling code here:
     }//GEN-LAST:event_BusinessMailYesActionPerformed
 
     private void MusicSteamingYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MusicSteamingYesActionPerformed
          System.out.println("Tmobile offers Music Streaming which doesnt count against your data.");
+        
+        Tmobile++;
         // TODO add your handling code here:
     }//GEN-LAST:event_MusicSteamingYesActionPerformed
 
     private void MusicSteamingNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MusicSteamingNoActionPerformed
          System.out.println("Sprint is the only Carrier which still offers unlimited data.");
-        // TODO add your handling code here:
+       //Verizon++;
+        Sprint++;
+      
+         // TODO add your handling code here:
     }//GEN-LAST:event_MusicSteamingNoActionPerformed
 
     /**

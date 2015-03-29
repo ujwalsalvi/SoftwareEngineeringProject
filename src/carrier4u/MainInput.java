@@ -1,30 +1,104 @@
 package carrier4u;
 import javax.swing.ButtonGroup;
-/**
- *
- * @author Mohammed
- */
-public class MainInput extends javax.swing.JFrame {
+
+public final class MainInput extends javax.swing.JFrame {
+     
+    private void minDesireGroup(){
+        ButtonGroup minDesire = new ButtonGroup();
+        minDesire.add(Minutes1000);
+        minDesire.add(Minutes10000);
+        minDesire.add(Minutes5000);
+        minDesire.add(MinutesUnlimited);   
+    }
+    
+    private void dataDesireGroup(){
+        ButtonGroup dataDesire = new ButtonGroup();
+        dataDesire.add(Data10GB);
+        dataDesire.add(Data3GB);
+        dataDesire.add(Data5GB);
+        dataDesire.add(DataUnlimited);
+    }
+    
+    private void textDesireGroup(){
+        ButtonGroup textDesire = new ButtonGroup();
+        textDesire.add(Text1000);
+        textDesire.add(Text10000);
+        textDesire.add(Text5000);
+        textDesire.add(TextUnlimited);
+    }
     
     private void busEmailGroup(){
         ButtonGroup busEmail = new ButtonGroup();
         busEmail.add(BusinessMailNo);
-        busEmail.add(BusinessMailYes);
-        
+        busEmail.add(BusinessMailYes);    
     }
     
-    private void minDesireGroup(){
-        ButtonGroup minDesire = new ButtonGroup();
+    private void musicStreamGroup(){
+        ButtonGroup musicStream = new ButtonGroup();
+        musicStream.add(MusicSteamingNo);
+        musicStream.add(MusicSteamingYes);
+    }
+    
+    private void famPlanGroup(){
+         ButtonGroup famPlan = new ButtonGroup();
+         famPlan.add(FamilyPlanNo);
+         famPlan.add(FamilyPlanYes);
+    }
+    
+    private void intCallGroup(){
+         ButtonGroup intCall = new ButtonGroup();
+         intCall.add(InternationalCallingNo);
+         intCall.add(InternationalCallingYes);
+    }
+    
+    private void intTextGroup(){
+         ButtonGroup intText = new ButtonGroup();
+         intText.add(InternationalTextingNo);
+         intText.add(InternationalTextingYes);
+    }
+    
+    private void signalCoverGroup(){
+         ButtonGroup signalCover = new ButtonGroup();
+         signalCover.add(SignalPoor);
+         signalCover.add(SignalFair);
+         signalCover.add(SignalGood);
+         signalCover.add(SignalExcellent);
+    }
+    
+    private void networkGroup(){
+         ButtonGroup network = new ButtonGroup();
+         network.add(NetworkCDMA);
+         network.add(NetworkGSM);
+    }
+    
+    private void mmsGroup(){
+         ButtonGroup mms = new ButtonGroup();
+         mms.add(MMSno);
+         mms.add(MMSyes);
+    }
+    
+    public void locationGroup(){
+         ButtonGroup location = new ButtonGroup();
+         location.add(LocationBasedNo);
+         location.add(LocationBasedYes);
     }
   
     public MainInput() {
         initComponents();
         busEmailGroup();
+        minDesireGroup();
+        dataDesireGroup();
+        textDesireGroup();
+        musicStreamGroup();
+        famPlanGroup();
+        intCallGroup();
+        intTextGroup();
+        signalCoverGroup();
+        networkGroup();
+        mmsGroup();
+        locationGroup();
     }
-    
-    
-    
-
+      
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -773,9 +847,6 @@ public class MainInput extends javax.swing.JFrame {
     int Tmobile = 0;
     int Sprint = 0;
     
-    
-    
-     
     private void jRadioButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton8ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton8ActionPerformed
@@ -1058,49 +1129,85 @@ public class MainInput extends javax.swing.JFrame {
         Tmobile = 0;
         Sprint = 0; 
      
+        ButtonGroup minDesire = new ButtonGroup();
+        minDesire.add(Minutes1000);
+        minDesire.add(Minutes10000);
+        minDesire.add(Minutes5000);
+        minDesire.add(MinutesUnlimited);
         
+        ButtonGroup busEmail = new ButtonGroup();
+        busEmail.add(BusinessMailNo);
+        busEmail.add(BusinessMailYes);
+        
+        ButtonGroup dataDesire = new ButtonGroup();
+        dataDesire.add(Data10GB);
+        dataDesire.add(Data3GB);
+        dataDesire.add(Data5GB);
+        dataDesire.add(DataUnlimited);
+        
+        ButtonGroup textDesire = new ButtonGroup();
+        textDesire.add(Text1000);
+        textDesire.add(Text10000);
+        textDesire.add(Text5000);
+        textDesire.add(TextUnlimited);
+        
+        ButtonGroup musicStream = new ButtonGroup();
+        musicStream.add(MusicSteamingNo);
+        musicStream.add(MusicSteamingYes);
+        
+        ButtonGroup famPlan = new ButtonGroup();
+        famPlan.add(FamilyPlanNo);
+        famPlan.add(FamilyPlanYes);
+        
+        ButtonGroup intCall = new ButtonGroup();
+        intCall.add(InternationalCallingNo);
+        intCall.add(InternationalCallingYes);
+        
+        ButtonGroup intText = new ButtonGroup();
+        intText.add(InternationalTextingNo);
+        intText.add(InternationalTextingYes);
+        
+        ButtonGroup signalCover = new ButtonGroup();
+        signalCover.add(SignalPoor);
+        signalCover.add(SignalFair);
+        signalCover.add(SignalGood);
+        signalCover.add(SignalExcellent);
+        
+        ButtonGroup network = new ButtonGroup();
+        network.add(NetworkCDMA);
+        network.add(NetworkGSM);
+        
+        ButtonGroup mms = new ButtonGroup();
+        mms.add(MMSno);
+        mms.add(MMSyes);
+        
+        ButtonGroup location = new ButtonGroup();
+        location.add(LocationBasedNo);
+        location.add(LocationBasedYes);
+        
+        busEmail.clearSelection();
+        minDesire.clearSelection();
+        dataDesire.clearSelection();
+        textDesire.clearSelection();
+        musicStream.clearSelection();
+        famPlan.clearSelection();
+        intCall.clearSelection();
+        intText.clearSelection();
+        signalCover.clearSelection();
+        network.clearSelection();
+        mms.clearSelection();
+        location.clearSelection(); 
+        
+        MidWest.setSelected(false);
+        NorthEast.setSelected(false);
         AndroidOS.setSelected(false);
-        BusinessMailNo.setSelected(false);
-        BusinessMailYes.setSelected(false);
-        Data10GB.setSelected(false);
-        Data3GB.setSelected(false);
-        Data5GB.setSelected(false);
-        DataUnlimited.setSelected(false);
-        FamilyPlanNo.setSelected(false);
-        FamilyPlanYes.setSelected(false);
         IOS.setSelected(false);
-        InternationalCallingNo.setSelected(false);
-        InternationalCallingYes.setSelected(false);
-        InternationalTextingNo.setSelected(false);
-        InternationalTextingYes.setSelected(false);
+        OtherOS.setSelected(false);
+        SouthEast.setSelected(false);
+        West.setSelected(false);
         Internet2G.setSelected(false);
         Internet3G.setSelected(false);
         InternetLTE.setSelected(false);
-        LocationBasedNo.setSelected(false);
-        LocationBasedYes.setSelected(false);
-        MMSno.setSelected(false);
-        MMSyes.setSelected(false);
-        MidWest.setSelected(false);
-        Minutes1000.setSelected(false);
-        Minutes10000.setSelected(false);
-        Minutes5000.setSelected(false);
-        MinutesUnlimited.setSelected(false);
-        MusicSteamingNo.setSelected(false);
-        MusicSteamingYes.setSelected(false);
-        NetworkCDMA.setSelected(false);
-        NetworkGSM.setSelected(false);
-        NorthEast.setSelected(false);
-        OtherOS.setSelected(false);
-        SignalExcellent.setSelected(false);
-        SignalFair.setSelected(false);
-        SignalGood.setSelected(false);
-        SignalPoor.setSelected(false);
-        SouthEast.setSelected(false);
-        Text1000.setSelected(false);
-        Text10000.setSelected(false);
-        Text5000.setSelected(false);
-        TextUnlimited.setSelected(false);
-        West.setSelected(false);
 
     }//GEN-LAST:event_ResetButtonActionPerformed
 

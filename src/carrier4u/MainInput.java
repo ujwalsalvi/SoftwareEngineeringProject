@@ -562,19 +562,22 @@ public class MainInput extends javax.swing.JFrame {
 
     private void LocationBasedNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LocationBasedNoActionPerformed
         // TODO add your handling code here:
+          System.out.println("T-Mobile should be economical since Location Based was selected No.");
     }//GEN-LAST:event_LocationBasedNoActionPerformed
 
     private void MMSyesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MMSyesActionPerformed
         // TODO add your handling code here:
-        System.out.println("Sprint Has better .");
+        System.out.println("Sprint Has better MMS prefference to 10MB per transfer.");
     }//GEN-LAST:event_MMSyesActionPerformed
 
     private void MMSnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MMSnoActionPerformed
         // TODO add your handling code here:
+          System.out.println("AT&T T-Mobile and Verizon allows upto 1MB per transfer.");
     }//GEN-LAST:event_MMSnoActionPerformed
 
     private void AndroidOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AndroidOSActionPerformed
         // TODO add your handling code here:
+          System.out.println("Android OS .");
     }//GEN-LAST:event_AndroidOSActionPerformed
 
     private void OtherOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OtherOSActionPerformed

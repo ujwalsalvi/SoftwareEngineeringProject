@@ -577,66 +577,81 @@ public class MainInput extends javax.swing.JFrame {
 
     private void AndroidOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AndroidOSActionPerformed
         // TODO add your handling code here:
-          System.out.println("Android OS .");
+          System.out.println("Android OS has a better Support on GSM carrier which are T-Mobile and AT&T.");
     }//GEN-LAST:event_AndroidOSActionPerformed
 
     private void OtherOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OtherOSActionPerformed
+         System.out.println("Other OS works better on all Carriers.");
         // TODO add your handling code here:
     }//GEN-LAST:event_OtherOSActionPerformed
 
     private void IOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IOSActionPerformed
+          System.out.println("Apple iOS works better on CDMA Carriers such as Verizon and Sprint.");
         // TODO add your handling code here:
     }//GEN-LAST:event_IOSActionPerformed
 
     private void NetworkCDMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NetworkCDMAActionPerformed
+        System.out.println("CDMA Carriers are Verizon and Sprint.");
         // TODO add your handling code here:
     }//GEN-LAST:event_NetworkCDMAActionPerformed
 
     private void NetworkGSMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NetworkGSMActionPerformed
+         System.out.println("GSM Carriers are Tmobile and AT&T.");
         // TODO add your handling code here:
     }//GEN-LAST:event_NetworkGSMActionPerformed
 
     private void InternetLTEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternetLTEActionPerformed
+         System.out.println("Best LTE Carriers are T-Mobile and Verizon.");
         // TODO add your handling code here:
     }//GEN-LAST:event_InternetLTEActionPerformed
 
     private void Internet2GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Internet2GActionPerformed
+           System.out.println("Best 2G Carrier is Sprint.");
         // TODO add your handling code here:
     }//GEN-LAST:event_Internet2GActionPerformed
 
     private void Internet3GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Internet3GActionPerformed
+           System.out.println("Best 3G Carrier is AT&T.");
         // TODO add your handling code here:
     }//GEN-LAST:event_Internet3GActionPerformed
 
     private void InternationalTextingYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalTextingYesActionPerformed
+           System.out.println("T-Mobile and AT&T has better International texting plan since they are global.");
         // TODO add your handling code here:
     }//GEN-LAST:event_InternationalTextingYesActionPerformed
 
     private void InternationalTextingNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalTextingNoActionPerformed
+       System.out.println("Verizon and Sprint dont offer International texting plan since they are CDMA.");
         // TODO add your handling code here:
     }//GEN-LAST:event_InternationalTextingNoActionPerformed
 
     private void InternationalCallingNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalCallingNoActionPerformed
+         System.out.println("Verizon and Sprint dont offer International Calling since they are CDMA.");
         // TODO add your handling code here:
     }//GEN-LAST:event_InternationalCallingNoActionPerformed
 
     private void InternationalCallingYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalCallingYesActionPerformed
+           System.out.println("T-Mobile and AT&T has better International texting plan since they are global.");
         // TODO add your handling code here:
     }//GEN-LAST:event_InternationalCallingYesActionPerformed
 
     private void FamilyPlanYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FamilyPlanYesActionPerformed
+             System.out.println("T-Mobile and AT&T both offer $100 for 4 lines plan.");
         // TODO add your handling code here:
     }//GEN-LAST:event_FamilyPlanYesActionPerformed
 
     private void FamilyPlanNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FamilyPlanNoActionPerformed
+       System.out.println("Verizon and Sprint have the best single line plans startign at $45.");
         // TODO add your handling code here:
     }//GEN-LAST:event_FamilyPlanNoActionPerformed
 
     private void BusinessMailNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BusinessMailNoActionPerformed
+        System.out.println("T-Mobile and AT&T arent best on offering Business and Corporate plans.");
         // TODO add your handling code here:
     }//GEN-LAST:event_BusinessMailNoActionPerformed
 
     private void BusinessMailYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BusinessMailYesActionPerformed
+       System.out.println("Verizon and Sprint have the best corporate emails.");
         // TODO add your handling code here:
     }//GEN-LAST:event_BusinessMailYesActionPerformed
 

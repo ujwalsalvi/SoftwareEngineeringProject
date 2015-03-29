@@ -5,9 +5,11 @@
  */
 
 //Login page should go to where!
+// On where page input the customer information
+// On customer info button press submit and go back to where
     // If United States Selected then go to MainInput.Java
-        // If canada or Mexico selected the proceed towards unsuported.java
-            
+    // If canada or Mexico selected the proceed towards unsuported.java
+    //         
 package carrier4u;
 
 /**

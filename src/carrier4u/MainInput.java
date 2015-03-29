@@ -562,72 +562,96 @@ public class MainInput extends javax.swing.JFrame {
 
     private void LocationBasedYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LocationBasedYesActionPerformed
         // TODO add your handling code here:
+        Verizon++;
         System.out.println("Verizon has the best Network Coverage.");
     }//GEN-LAST:event_LocationBasedYesActionPerformed
 
     private void LocationBasedNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LocationBasedNoActionPerformed
         // TODO add your handling code here:
-          System.out.println("T-Mobile should be economical since Location Based was selected No.");
+        Tmobile++;
+        System.out.println("T-Mobile should be economical since Location Based was selected No.");
     }//GEN-LAST:event_LocationBasedNoActionPerformed
 
     private void MMSyesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MMSyesActionPerformed
         // TODO add your handling code here:
+        Sprint++;
         System.out.println("Sprint Has better MMS prefference to 10MB per transfer.");
     }//GEN-LAST:event_MMSyesActionPerformed
 
     private void MMSnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MMSnoActionPerformed
         // TODO add your handling code here:
-          System.out.println("AT&T T-Mobile and Verizon allows upto 1MB per transfer.");
+        Att++;
+        System.out.println("AT&T T-Mobile and Verizon allows upto 1MB per transfer.");
     }//GEN-LAST:event_MMSnoActionPerformed
 
     private void AndroidOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AndroidOSActionPerformed
         // TODO add your handling code here:
-          System.out.println("Android OS has a better Support on GSM carrier which are T-Mobile and AT&T.");
+        Tmobile++;
+        Att++;
+        System.out.println("Android OS has a better Support on GSM carrier which are T-Mobile and AT&T.");
     }//GEN-LAST:event_AndroidOSActionPerformed
 
     private void OtherOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OtherOSActionPerformed
-         System.out.println("Other OS works better on all Carriers.");
+        Verizon++;
+        Att++;
+        Tmobile++;
+        Sprint++;
+        System.out.println("Other OS works better on all Carriers.");
         // TODO add your handling code here:
     }//GEN-LAST:event_OtherOSActionPerformed
 
     private void IOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IOSActionPerformed
-          System.out.println("Apple iOS works better on CDMA Carriers such as Verizon and Sprint.");
+        Verizon++;
+        Sprint++;
+        System.out.println("Apple iOS works better on CDMA Carriers such as Verizon and Sprint.");
         // TODO add your handling code here:
     }//GEN-LAST:event_IOSActionPerformed
 
     private void NetworkCDMAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NetworkCDMAActionPerformed
+        Verizon++;
+        Sprint++;
         System.out.println("CDMA Carriers are Verizon and Sprint.");
         // TODO add your handling code here:
     }//GEN-LAST:event_NetworkCDMAActionPerformed
 
     private void NetworkGSMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NetworkGSMActionPerformed
-         System.out.println("GSM Carriers are Tmobile and AT&T.");
+        Att++;
+        Tmobile++;
+        System.out.println("GSM Carriers are Tmobile and AT&T.");
         // TODO add your handling code here:
     }//GEN-LAST:event_NetworkGSMActionPerformed
 
     private void InternetLTEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternetLTEActionPerformed
-         System.out.println("Best LTE Carriers are T-Mobile and Verizon.");
+        Verizon++;
+        Tmobile++;
+        System.out.println("Best LTE Carriers are T-Mobile and Verizon.");
         // TODO add your handling code here:
     }//GEN-LAST:event_InternetLTEActionPerformed
 
     private void Internet2GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Internet2GActionPerformed
-           System.out.println("Best 2G Carrier is Sprint.");
+        Sprint++;
+        System.out.println("Best 2G Carrier is Sprint.");
         // TODO add your handling code here:
     }//GEN-LAST:event_Internet2GActionPerformed
 
     private void Internet3GActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Internet3GActionPerformed
-           System.out.println("Best 3G Carrier is AT&T.");
+        Att++;
+        System.out.println("Best 3G Carrier is AT&T.");
         // TODO add your handling code here:
     }//GEN-LAST:event_Internet3GActionPerformed
 
     private void InternationalTextingYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalTextingYesActionPerformed
-           System.out.println("T-Mobile and AT&T has better International texting plan since they are global.");
+        Att++;
+        Tmobile++;
+        System.out.println("T-Mobile and AT&T has better International texting plan since they are global.");
         // TODO add your handling code here:
     }//GEN-LAST:event_InternationalTextingYesActionPerformed
 
     private void InternationalTextingNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalTextingNoActionPerformed
-       System.out.println("Verizon and Sprint dont offer International texting plan since they are CDMA.");
-        // TODO add your handling code here:
+        Verizon++;
+        Sprint++;
+        System.out.println("Verizon and Sprint dont offer International texting plan since they are CDMA.");
+     // TODO add your handling code here:
     }//GEN-LAST:event_InternationalTextingNoActionPerformed
 
     private void InternationalCallingNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_InternationalCallingNoActionPerformed

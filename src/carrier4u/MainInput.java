@@ -373,7 +373,7 @@ public final class MainInput extends javax.swing.JFrame {
             }
         });
 
-        SubmitButton.setText("Submit");
+        SubmitButton.setText("Next>");
         SubmitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SubmitButtonActionPerformed(evt);

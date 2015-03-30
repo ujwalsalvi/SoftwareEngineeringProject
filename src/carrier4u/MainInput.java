@@ -889,7 +889,9 @@ public final class MainInput extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton7ActionPerformed
 
     private void SubmitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SubmitButtonActionPerformed
-       
+       dispose();
+        AllCarrier s = new AllCarrier();
+        s.setVisible(true);
     }//GEN-LAST:event_SubmitButtonActionPerformed
 
     private void LocationBasedYesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LocationBasedYesActionPerformed

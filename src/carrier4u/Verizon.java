@@ -67,7 +67,7 @@ public class Verizon extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Verizon Data Pricing");
+        jLabel1.setText("Verizon Data Rates");
 
         jButton2.setText("<Back");
         jButton2.addActionListener(new java.awt.event.ActionListener() {

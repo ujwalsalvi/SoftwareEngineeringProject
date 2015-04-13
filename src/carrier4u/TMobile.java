@@ -1,7 +1,6 @@
 package carrier4u;
 import javax.swing.ButtonGroup;
 
-
 public class TMobile extends javax.swing.JFrame {
 
     private void tmobileDataGroup(){

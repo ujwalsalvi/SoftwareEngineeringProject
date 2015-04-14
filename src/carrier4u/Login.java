@@ -5,6 +5,15 @@
  */
 package carrier4u;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author Mohammed
@@ -116,10 +125,63 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_passwordActionPerformed
 
     private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
-         dispose();
-        Where s = new Where();
-        s.setVisible(true);
-         
+       //Create buffered Reader
+        BufferedReader br = null;
+        String line = "";
+        String csvSplitBy = ",";
+        File file = new File ("session.csv");
+        PrintWriter printWriter = null;
+        try {
+            printWriter = new PrintWriter ("session.csv");
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        
+        //Read from login csv database
+        try{
+               br = new BufferedReader(new FileReader("login.csv"));
+               while((line = br.readLine()) != null){
+                   String[] data = line.split(csvSplitBy);
+                   
+                   if(data[0].equalsIgnoreCase(Login.getText())){
+                       if(data[1].equals(Login.getText())){ //TODO: FIND PASSWORD! if(data[1].equals(jPasswordField1.getText()))
+                           
+//                           //Write session
+//                           printWriter.println(data[0]+","+data[2]+",");
+//                           printWriter.close();
+                                                    
+                            Where s = new Where();
+                            s.setVisible(true);
+                        //Close Login Gui
+                            dispose();
+        System.out.println("SAME USER AND PASS ");
+                       }
+                   }else{
+                   //error
+                       // dispose();    
+        System.out.println("ERROR1 performed");
+                   }
+                    
+               }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+if (br != null) {
+try {
+br.close();
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+}
+        
+        
+        System.out.println("ERROR0 performed");
+// TODO add your handling code here:​
+
           
 
 // TODO add your handling code here:

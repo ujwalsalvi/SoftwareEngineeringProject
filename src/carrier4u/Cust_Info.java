@@ -1,5 +1,9 @@
 package carrier4u;
 import javax.swing.ButtonGroup;
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 
 public class Cust_Info extends javax.swing.JFrame {
@@ -312,9 +316,38 @@ public class Cust_Info extends javax.swing.JFrame {
     }//GEN-LAST:event_maleActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      dispose();
+        //Create buffered Reader
+        BufferedReader br = null;
+        String line = "";
+        String csvSplitBy = ",";
+        File file = new File ("data.csv");
+        PrintWriter printWriter = null;
+        try {
+            printWriter = new PrintWriter ("data.csv");
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
+        //jTextField1= CustomerID; jTextField2= First Name; jTextField4 =Last Name; jTextField3 = Age; jTextField5= DL; jTextField6= Phone #; jTextField7=email address
+        
+        System.out.println(custID.getText()+" "+fName.getText()+" "+lName.getText()+" "+age.getText()+" "+dLicense.getText()+" "+phone.getText()+" "+email.getText());
+       
+        printWriter.println(custID.getText()+","+fName.getText()+","+lName.getText()+","+age.getText()+","+dLicense.getText()+","+phone.getText()+","+email.getText());
+        printWriter.close();
+                                                   
+        
+        if (br != null) {
+try {
+br.close();
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+        
+        
+        dispose();
         Where s = new Where();
-        s.setVisible(true);  // TODO add your handling code here:
+        s.setVisible(true);  // TODO add your handling code here:​
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void clearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearActionPerformed
